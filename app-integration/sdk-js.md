@@ -124,4 +124,4 @@ await logout();
 
 ---
 
-**Prefer full control?** See the [API Integration Guide](api-integration.md).
+**Prefer full control?** See the direct [API Integration Guide](api-integration.md).
