@@ -10,7 +10,7 @@ Use this path if you need full control over your authentication pipeline instead
 Trigger a magic-link email for your user.
 
 ```bash
-curl -X POST https://api.stackure.com/api/public/auth/magic-link/send \
+curl -X POST https://stackure.com/api/public/auth/magic-link/send \
   -H "Content-Type: application/json" \
   -d '{
     "user_email": "user@example.com",
@@ -45,7 +45,7 @@ Your backend must validate the `session_token` before serving protected data.
 
 **Request**
 ```bash
-curl "https://api.stackure.com/api/public/auth/session/validate?app_id=YOUR_APP_ID" \
+curl "https://stackure.com/api/public/auth/session/validate?app_id=YOUR_APP_ID" \
   -H "Authorization: Bearer SESSION_TOKEN"
 ```
 

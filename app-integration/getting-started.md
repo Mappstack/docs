@@ -15,7 +15,7 @@ product.
 ### Using the API
 
 ``` bash
-curl -X POST https://api.stackure.com/api/internal/app \
+curl -X POST https://stackure.com/api/internal/app \
   -H "Cookie: stackure_session=YOUR_SESSION_COOKIE" \
   -H "Content-Type: application/json" \
   -d '{
@@ -48,7 +48,7 @@ Choose which users or groups should see and launch this app in Stackure.
 **API:**
 
 ``` bash
-curl -X POST https://api.stackure.com/api/internal/app/account \
+curl -X POST https://stackure.com/api/internal/app/account \
   -H "Cookie: stackure_session=YOUR_SESSION_COOKIE" \
   -H "Content-Type: application/json" \
   -d '{
@@ -64,7 +64,7 @@ curl -X POST https://api.stackure.com/api/internal/app/account \
 **API:**
 
 ``` bash
-curl -X POST https://api.stackure.com/api/internal/app/team \
+curl -X POST https://stackure.com/api/internal/app/team \
   -H "Cookie: stackure_session=YOUR_SESSION_COOKIE" \
   -H "Content-Type: application/json" \
   -d '{
@@ -80,7 +80,7 @@ curl -X POST https://api.stackure.com/api/internal/app/team \
 **API:**
 
 ``` bash
-curl -X POST "https://api.stackure.com/api/internal/app/partner?app_id=YOUR_APP_ID" \
+curl -X POST "https://stackure.com/api/internal/app/partner?app_id=YOUR_APP_ID" \
   -H "Cookie: stackure_session=YOUR_SESSION_COOKIE" \
   -H "Content-Type: application/json" \
   -d '{
