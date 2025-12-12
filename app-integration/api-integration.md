@@ -30,7 +30,7 @@ curl -X POST https://stackure.com/api/public/auth/magic-link/send \
 
 ## Step 2. Handle the magic-link redirect
 
-After the user clicks the sign-in link, Stackure redirects them to your app's registered URL with a `session_token` query parameter.
+After the user clicks the sign-in link, Stackure redirects the user to your app’s registered URL (configured during app registration) with a `session_token` query parameter.
 
 ```
 https://myapp.com?session_token=abc123...

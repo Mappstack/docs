@@ -57,6 +57,8 @@ https://myapp.com?session_token=abc123...
 - SameSite: `lax`
 - Max-Age: `604800` (7 days)
 
+This ensures session validation happens server-side and prevents token leakage to frontend code.
+
 The SDK will automatically include this cookie when validating sessions.
 
 ---
@@ -124,4 +126,4 @@ await logout();
 
 ---
 
-**Prefer full control?** See the direct [API Integration Guide](api-integration.md).
+**Prefer full control?** See the custom [API Integration Guide](api-integration.md).

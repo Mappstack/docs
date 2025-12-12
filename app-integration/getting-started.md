@@ -1,9 +1,8 @@
-# Get Started
+# App Integration – Getting Started
 
 ## Step 1. Register your app in Stackure
 
-Create an application entry so Stackure can authenticate users into your
-product.
+Register your application so Stackure can authenticate users into it.
 
 ### Using the Web UI
 
@@ -92,8 +91,7 @@ curl -X POST "https://stackure.com/api/internal/app/partner?app_id=YOUR_APP_ID" 
 
 ## Step 3. Add authentication to your app
 
-Stackure authenticates the user. Your app receives a verified session
-and the user's access context.
+Stackure authenticates the user. Your app receives a verified session and the user's access context.
 
 Choose your integration path:
 
@@ -104,7 +102,7 @@ checks.
 
 See the [SDK Guide](sdk-js.md).
 
-### Direct API integration
+### Custom API integration
 
 Use the REST endpoints directly for full control.
 
