@@ -8,8 +8,7 @@ These guides are intended for developers and technical administrators who are bu
 
 If you are integrating an application with Stackure, begin with:
 
-- **App Integration Guide**  
-  [`app-integration/getting-started.md`](app-integration/getting-started.md)
+- [`App Integration Guide`](app-integration/getting-started.md)
 
 This guide walks you through registering your app, assigning access, and choosing an integration path.
 
@@ -17,13 +16,11 @@ This guide walks you through registering your app, assigning access, and choosin
 
 Once your app is registered, choose one of the following:
 
-- **SDK Integration (JavaScript / TypeScript)**  
-  [`app-integration/sdk-js.md`](app-integration/sdk-js.md)
+- [`SDK Integration (JavaScript / TypeScript)`](app-integration/sdk-js.md)
 
   The simplest way to add passwordless authentication, session validation, and role-based access using the Stackure SDK.
 
-- **Custom API Integration**  
-  [`app-integration/api-integration.md`](app-integration/api-integration.md)
+- [`Custom API Integration`](app-integration/api-integration.md)
 
   Direct REST API integration for full control over authentication and authorization flows.
 
