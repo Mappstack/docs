@@ -1,7 +1,8 @@
 # API Integration Guide
 
-This guide shows how to integrate Stackure authentication and session validation directly using the REST API.   
-Use this path if you need full control over your authentication pipeline instead of using the SDK.
+This guide shows how to integrate your application with Stackure for authentication and session validation using the REST API.
+
+Use this approach if you need full control over how your application handles authentication instead of using the Stackure SDK.
 
 ---
 
