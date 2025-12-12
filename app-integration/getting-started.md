@@ -1,0 +1,111 @@
+# Get Started
+
+## Step 1. Register your app in Stackure
+
+Create an application entry so Stackure can authenticate users into your
+product.
+
+### Using the Web UI
+
+1.  Sign in to Stackure.
+2.  Go to **Apps** → **Add Application**.
+3.  Enter the app name, URL, and logo.
+4.  Save and copy the generated `app_id`.
+
+### Using the API
+
+``` bash
+curl -X POST https://api.stackure.com/api/internal/app \
+  -H "Cookie: stackure_session=YOUR_SESSION_COOKIE" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "app_name": "My App",
+    "app_url": "https://myapp.com",
+    "app_logo": "https://myapp.com/logo.png",
+    "app_logo_type": "url"
+  }'
+```
+
+**Example response**
+
+``` json
+{
+  "app_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "message": "app registered successfully"
+}
+```
+
+---
+
+## Step 2. Grant access to your app
+
+Choose which users or groups should see and launch this app in Stackure.
+
+### Share with your entire account
+
+**Web UI:** Apps → select your app → Share → Entire Account
+
+**API:**
+
+``` bash
+curl -X POST https://api.stackure.com/api/internal/app/account \
+  -H "Cookie: stackure_session=YOUR_SESSION_COOKIE" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "app_id": "YOUR_APP_ID",
+    "account_id": "YOUR_ACCOUNT_ID"
+  }'
+```
+
+### Share with a team
+
+**Web UI:** Apps → select your app → Share → Specific Teams
+
+**API:**
+
+``` bash
+curl -X POST https://api.stackure.com/api/internal/app/team \
+  -H "Cookie: stackure_session=YOUR_SESSION_COOKIE" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "app_id": "YOUR_APP_ID",
+    "team_id": "TEAM_ID"
+  }'
+```
+
+### Share with a partner
+
+**Web UI:** Apps → select your app → Share → Partner
+
+**API:**
+
+``` bash
+curl -X POST "https://api.stackure.com/api/internal/app/partner?app_id=YOUR_APP_ID" \
+  -H "Cookie: stackure_session=YOUR_SESSION_COOKIE" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "partner_id": "PARTNER_ID"
+  }'
+```
+
+---
+
+## Step 3. Add authentication to your app
+
+Stackure authenticates the user. Your app receives a verified session
+and the user's access context.
+
+Choose your integration path:
+
+### SDK (recommended)
+
+Minimal setup and built-in helpers for token validation and permission
+checks.
+
+See the [SDK Guide](sdk-js.md).
+
+### Direct API integration
+
+Use the REST endpoints directly for full control.
+
+See the [API Integration Guide](api-integration.md).
