@@ -2,38 +2,35 @@
 
 This repository contains developer documentation for integrating applications with Stackure for authentication and access control.
 
-These guides are intended for developers and technical administrators who are building or maintaining applications and want to make them available to users through Stackure.
+These guides are intended for developers and technical administrators building or maintaining applications that authenticate users and enforce access through Stackure.
 
 ## Start here
 
-If you are integrating an application with Stackure, begin with:
+If you are integrating an application with Stackure, start with:
 
-- [`App Integration Guide`](app-integration/getting-started.md)
+- [App Integration Guide](app-integration/getting-started.md)
 
-This guide walks you through registering your app, assigning access, and choosing an integration path.
+This guide walks you through registering your app, assigning access, and selecting an integration approach.
 
 ## Integration paths
 
-Once your app is registered, choose one of the following:
+After registering your app, choose one of the following integration paths:
 
-- [`SDK Integration (JavaScript / TypeScript)`](app-integration/sdk-js.md)
+- [SDK Integration (JavaScript / TypeScript)](app-integration/sdk-js.md)  
+  The recommended approach for adding passwordless authentication, session validation, and role-based access using the Stackure SDK.
 
-  The simplest way to add passwordless authentication, session validation, and role-based access using the Stackure SDK.
-
-- [`Custom API Integration`](app-integration/api-integration.md)
-
+- [Custom API Integration](app-integration/api-integration.md)  
   Direct REST API integration for full control over authentication and authorization flows.
 
 ## Scope
 
-These documents focus on application integration only.
+These documents focus exclusively on application integration.
 
 They do not cover:
 - end-user behavior or UI flows
 - Stackure console usage
-- administrative or headless automation
-- full API reference
+- administrative or headless automation workflows
 
-Advanced and headless use cases are documented separately.
+The complete OpenAPI specification is available in the [`api`](api/) directory.
 
 ---
